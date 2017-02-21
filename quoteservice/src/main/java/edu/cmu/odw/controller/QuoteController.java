@@ -1,12 +1,14 @@
 package edu.cmu.odw.controller;
 
 import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
 
 import edu.cmu.odw.model.Quote;
 import edu.cmu.odw.service.QuoteService;
@@ -16,8 +18,8 @@ import edu.cmu.odw.service.QuoteService;
 public class QuoteController {
 
 	@Autowired
-	private QuoteService quoteService;
-
+	private QuoteService quoteService;	
+	
 	@RequestMapping("/api/quote/random")
 	public Quote random() {
 		Quote q = quoteService.randomQuote(); 		
