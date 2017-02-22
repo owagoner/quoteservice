@@ -3,6 +3,7 @@ server:
 eureka:
   client:
     service-url: 
-      defaultZone: https://owagoner:Password123@eurekaservice-application.cfapps.io:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+      #defaultZone: https://owagoner:Password123@eurekaservice-application.cfapps.io:8761/eureka/
 #  instance:
 #    non-secure-port: 80
